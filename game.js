@@ -58,18 +58,21 @@ const textNodes = [
         id: 2,
         text: 'You venture forth in search of answers to where you are when you come across a merchant.',
         options: [
-            {text: 'Trade the goo for a sword',
+            {
+                text: 'Trade the goo for a sword',
             requiredState: (currentState) => currentState.blueGoo,
             setState: { blueGoo : false, sword: true},
-            nextState: 3
+            nextText: 3
             },
-            {text: 'Trade the goo for a shield',
+            {
+                text: 'Trade the goo for a shield',
             requiredState: (currentState) => currentState.blueGoo,
             setState: { blueGoo : false, shield: true},
-            nextState: 3
+            nextText: 3
             },
-            {text: 'Ignore the merchant',
-            nextState: 3
+            {
+                text: 'Ignore the merchant',
+            nextText: 3
             },
         ]
     },
@@ -88,7 +91,7 @@ const textNodes = [
             {
                 text: 'Find some hay in a stable to sleep in',
                 nextText: 6
-            }
+            },
         ]
     },
     {
@@ -98,9 +101,9 @@ const textNodes = [
             {
                 text: 'Restart',
                 nextText: -1
-            }
+            },
         ]
-    }
+    },
 ]
 
 startGame()
