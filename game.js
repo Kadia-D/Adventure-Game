@@ -112,11 +112,11 @@ const textNodes = [
                 text: 'Trade the goo for a room',
                 requiredState: (currentState) => currentState.blueGoo,
             setState: { blueGoo : false, room: true},
-            nextText: 8
+            nextText: 7
             },
             {
                 text: 'Sleep outside in the cold',
-                nextText: 9
+                nextText: 8
             },
         ]
     },
@@ -126,18 +126,83 @@ const textNodes = [
         options: [
             {
                 text: 'Run ',
-                nextText: 10
+                nextText: 9
             },
             {
                 text: 'Explain your situation to him',
-                nextText: 11
+                nextText: 10
             },
             {
                 text: 'Rob him for what he has',
+                nextText: 11
+            },
+        ]
+    },
+    {
+        id: 7,
+        text: 'The owner gives you a room to sleep in and you settle in for the night',
+        options: [
+            {
+                text: ' Fall asleep on the bed',
                 nextText: 12
             },
         ]
+    },
+    {
+        id: 8,
+        text: 'The weather is below freezing and you die of hypothermia',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            },
+        ]
+    },
+    {
+        id: 9,
+        text: 'You are still weak and he catches up to you and stabs you with his pitchfork',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            },
+        ]
+    },
+    {
+        id: 10,
+        text: 'He doesnt listen and stabs you',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            },
+        ]
+    },
+    {
+        id:11,
+        text: 'You lunge at him and search him but he has nothing and shouts for others to help him. The villagers come and take you to the king',
+        options: [
+            {
+            text: 'Fight them',
+            nextText: 13
+            },
+            {
+                text: 'Go with them',
+                nextText:14
+            }
+        ]
+    },
+    {
+        id:12,
+        text: 'You wake up back in your own bed. You did not solve the mystery.',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            },
+        ]
     }
+  
 ]
 
 startGame()
