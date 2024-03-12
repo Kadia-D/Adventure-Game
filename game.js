@@ -1,3 +1,5 @@
+
+
 const textElement = document.getElementById("text")
 const optionButtonsElement = document.getElementById("option-buttons")
 
@@ -200,6 +202,93 @@ const textNodes = [
                 text: 'Restart',
                 nextText: -1
             },
+        ]
+    },
+    {
+        id:13,
+        text: 'They gang up on you and kill you',
+        options: [
+            {
+                 text: 'Restart',
+                        nextText: -1
+            },
+                ]
+    },
+    {
+        id: 14,
+        text: 'You go calmly with them to their king',
+        options: [
+            {
+                text: 'Beg for mercy',
+                nextText: 15
+            },
+            {
+                text: 'Deny everything',
+                nextText: 16
+            }
+        ]
+    },
+    {
+        id: 15,
+        text: 'You beg for mercy and explain your plight to the king.He invites you to his secret chamber',
+        options: [
+            {
+                text: ' Follow him to his chamber',
+                nextText: 17
+            },
+            {
+                text: 'Beg him to let you go back to the town',
+                nextText: 18
+            }
+        ]
+    },
+    {
+        id:16,
+        text: ' The king is furious and orders for your execution',
+        options:[
+            {
+                text: 'You died: Restart',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id:17,
+        text: 'The king apologises for the confusion. His wife was a witch whose power had recently gotten out of control. She had accidentally turned her mouse into a human being and he apologised ',
+        options: [
+            {
+                text: 'Insist you were always human and he should send you back home',
+                nextText: 19
+            },
+            {
+                text: 'Accept to be turned back into a mouse for fear of annoying the king',
+                nextText: 20
+            }
+        ]
+    },
+    {
+        id: 18,
+        text: 'You are let back in town and killed almost immediately for attempted robbery',
+        options: [
+            {
+                text: 'Restart',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id: 19,
+        text: 'The king is impatient and so hurriedly leads you through a curtain with a loud noise and swirls of colored light. You wake up in your bed.It is afternoon, and you go out in to the sun',
+        text: 'YOU WON THE GAME !!!!'  
+    },
+    {
+        id: 20,
+        text: 'You feel your bones contort into a tiny form and you black out.',
+        options: [
+            {
+                text:'Restart',
+                nextText: -1
+            }
         ]
     }
   
