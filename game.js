@@ -104,6 +104,40 @@ const textNodes = [
             },
         ]
     },
+    {
+        id: 5,
+        text: 'You enter the town and find an inn but you have no money to pay for the room',
+        options: [
+            {
+                text: 'Trade the goo for a room',
+                requiredState: (currentState) => currentState.blueGoo,
+            setState: { blueGoo : false, room: true},
+            nextText: 8
+            },
+            {
+                text: 'Sleep outside in the cold',
+                nextText: 9
+            },
+        ]
+    },
+    {
+        id :6,
+        text: 'You sleep in the filthy stable with animal decay and thin hay.You wake up the next morning and see the owner approaching you with a pitchfork ',
+        options: [
+            {
+                text: 'Run ',
+                nextText: 10
+            },
+            {
+                text: 'Explain your situation to him',
+                nextText: 11
+            },
+            {
+                text: 'Rob him for what he has',
+                nextText: 12
+            },
+        ]
+    }
 ]
 
 startGame()
